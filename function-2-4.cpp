@@ -20,6 +20,6 @@ bool is_ascending(int array[],int n)
         cout<<is_asc<<"\n"<<endl;
         return is_asc;
     }
-    cout<<"false"<<"\n"<<endl;
+    //cout<<"false"<<"\n"<<endl;
     return false;
 }
