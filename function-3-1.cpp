@@ -36,7 +36,7 @@ bool is_fanarray(int array[],int n)
             }
             
         }
-        cout<<is_fan<<endl;
+        //cout<<is_fan<<endl;
         return is_fan;
     }
     return false;

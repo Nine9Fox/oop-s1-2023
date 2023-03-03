@@ -13,7 +13,7 @@ int num_count(int array[],int n,int number)
                 count++;
             }            
         }
-        cout<<count<<endl;
+        //cout<<count<<endl;
         return count;
     }
     return 0;

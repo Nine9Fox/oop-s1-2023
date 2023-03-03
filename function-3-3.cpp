@@ -18,13 +18,13 @@ double weighted_average(int array[],int n)
                     count++;
                 }
             }
-            printf("%.2F\n",count);
+            //printf("%.2F\n",count);
             sum +=count*array[i];
-            printf("sum is%.2F\n",sum);
+            //printf("sum is%.2F\n",sum);
         }
 
         ave=sum/n;
-        printf("%.2F\n",ave);
+        //printf("%.2F\n",ave);
         return ave;        
     }
     return 0;

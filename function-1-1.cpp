@@ -9,7 +9,7 @@ int array_sum(int array[],int n)
         {
             sum += array[i];
         }
-        cout<<sum<<endl;
+        //cout<<sum<<endl;
         return sum;
     }
     return 0;

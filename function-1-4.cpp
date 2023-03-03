@@ -10,7 +10,7 @@ int sum_two_arrays(int array[],int secondarray[],int n)
         {
             sum +=array[i]+secondarray[i];
         }
-        cout<<sum<<endl;
+        //cout<<sum<<endl;
         return sum;
     }
     return 0;

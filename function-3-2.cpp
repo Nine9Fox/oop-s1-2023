@@ -22,6 +22,6 @@ int median_array(int array[],int n)
         }
     }
     median=array[(n/2)];
-    cout<<median<<endl;
+    //cout<<median<<endl;
     return median;
 }

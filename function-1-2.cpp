@@ -11,7 +11,7 @@ double array_mean(int array[],int n)
             mean += array[i];
         }
         mean=mean/n;
-        cout<<mean<<endl;
+        //cout<<mean<<endl;
         return mean;
     }
     return 0;

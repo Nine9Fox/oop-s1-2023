@@ -13,7 +13,7 @@ int min_element(int array[],int n)
                 min=array[i];
             }
         }
-        cout<<min<<endl;
+        //cout<<min<<endl;
         return min;
     }
     return 0;
