@@ -6,7 +6,7 @@ bool is_fanarray(int array[],int n)
     bool is_fan=true;
     if(n>=1)
     {
-        int array_rev[5];
+        int array_rev[n];
         int array_rev_id=0;
         for(int i=n-1;i>=0;i--)
         {
