@@ -17,7 +17,7 @@ bool is_descending(int array[],int n)
                 }
             }
         }
-        cout<<is_dsc<<"\n"<<endl;
+        //cout<<is_dsc<<"\n"<<endl;
         return is_dsc;
     }
     //cout<<"false"<<"\n"<<endl;

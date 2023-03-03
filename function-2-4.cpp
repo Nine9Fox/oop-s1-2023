@@ -17,7 +17,7 @@ bool is_ascending(int array[],int n)
                 }
             }
         }
-        cout<<is_asc<<"\n"<<endl;
+        //cout<<is_asc<<"\n"<<endl;
         return is_asc;
     }
     //cout<<"false"<<"\n"<<endl;
