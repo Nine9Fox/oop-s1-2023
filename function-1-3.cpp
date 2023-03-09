@@ -23,7 +23,7 @@ void count_digits(int array[4][4])
         check_Num++;
     }
     printf(
-        "0:%d;1:%d;2:%d;3:%d;4:%d;5:%d;6:%d;7:%d;8:%d;9:%d\n;"
+        "0:%d;1:%d;2:%d;3:%d;4:%d;5:%d;6:%d;7:%d;8:%d;9:%d;\n"
         ,num_NumArr[0],num_NumArr[1],num_NumArr[2],num_NumArr[3],num_NumArr[4],num_NumArr[5],num_NumArr[6],num_NumArr[7],num_NumArr[8],num_NumArr[9]
         );
     
