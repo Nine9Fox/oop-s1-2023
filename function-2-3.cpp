@@ -10,7 +10,6 @@ bool is_palindrome(int integers[], int length)
 {
     int reverse_integers[length];
     int reverse_integers_ID=-1;
-    //cout<<"1"<<endl;
     if(length>0)
     {
         for(int i=length-1;i>=0;i--)
@@ -26,7 +25,6 @@ bool is_palindrome(int integers[], int length)
             }
         }
         return 0;
-        //cout<<"2"<<endl;
     }
     return -1;
 }
@@ -34,19 +32,16 @@ bool is_palindrome(int integers[], int length)
 
 int sum_if_palindrome(int integers[], int length)
 {
-    //cout<<"3"<<endl;
     int sum=0;
     for(int i=0;i<length;i++)
     {
         sum+=integers[i];
     }
-    //cout<<"4"<<endl;
     return sum;
 }
 
 int sum_array_elements(int integers[], int length)
 {
-    //cout<<"5"<<endl;
     bool is_palind; 
     is_palind=is_palindrome(integers,length);
     int sum=is_palind;
@@ -54,7 +49,5 @@ int sum_array_elements(int integers[], int length)
     {
         sum=sum_if_palindrome(integers,length);
     }
-    //cout<<sum<<endl;
-    //cout<<"6"<<endl;
     return sum;
 }
