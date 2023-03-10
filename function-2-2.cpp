@@ -22,6 +22,6 @@ int binary_to_int(int binary_digits[], int number_of_digits)
         }
         a=a/10;
     }
-    cout<<a_decimal<<endl;
+    //cout<<a_decimal<<endl;
     return a_decimal;
 }

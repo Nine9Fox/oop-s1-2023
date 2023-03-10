@@ -16,7 +16,7 @@ int sum_min_max(int integers[], int length)
         min=array_min(integers,length);
         max=array_max(integers,length);
         sum=min+max;
-        cout<<sum<<endl;
+        //cout<<sum<<endl;
         return sum;
     }
     return -1;
