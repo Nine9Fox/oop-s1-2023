@@ -1,11 +1,13 @@
 #include<iostream>
 using namespace std;
 
-extern int size_of_variable_star_t();
+extern int *readNumbers();
+extern void printNumbers(int *,int);
 
 int main()
 {
-    int a=size_of_variable_star_t();
-    cout<<a<<endl;
+    int *a=readNumbers();
+    printNumbers(a,10);
+    delete[] a;
     return 0;
 }

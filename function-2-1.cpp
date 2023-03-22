@@ -1,26 +1,43 @@
 #include<iostream>
 using namespace std;
 
-float add_op(float left, float right)
-{
-    return left+right;
-};
-float subtract_op(float left, float right)
-{
-    return left-right;
-};
+extern int *readNumbers();
+extern void printNumbers(int *,int);
+extern void hexDigits(int *,int) ;
 
-
-float arithmetic_ops(float left, float right, std::string op)
+int *readNumbers()
 {
-    if(op=="+")
+    int *number_arr=new int[10];
+    for(int i=0;i<10;i++)
     {
-        return add_op(left,right);
+        int a=0;
+        std::cin>>a;
+        number_arr[i]=a;
     }
-        if(op=="-")
+    return number_arr;
+}
+
+void hexDigits(int *numbers,int length)
+{
+    for(int i=0;i<length;i++)
     {
-        return subtract_op(left,right);
+        cout<<i<<" "<<numbers[i]<<" ";
+        if(numbers[i]>=10)
+        {
+            switch (numbers[i])
+            {
+            case 10:cout<<"A"<<endl;break;
+            case 11:cout<<"B"<<endl;break;
+            case 12:cout<<"C"<<endl;break;
+            case 13:cout<<"D"<<endl;break;
+            case 14:cout<<"E"<<endl;break;
+            case 15:cout<<"F"<<endl;break;
+            }
+        }else
+        {
+            cout<<numbers[i]<<endl;
+        }
     }
-    return 0;
-};
+    return;
+}
 

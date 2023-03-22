@@ -1,14 +1,25 @@
 #include<iostream>
 using namespace std;
 
-int size_of_variable_star_t()
+extern int *readNumbers();
+extern void printNumbers(int *,int);
+
+int *readNumbers()
 {
-    int a=5;
-    int* p=&a;
-    int* t=new int;
-    int size1=sizeof(t);
-    int size2=sizeof(p);
-    //cout<<size1<<endl;
-    //cout<<size2<<endl;
-    return size1;
+    int *number_arr=new int[10];
+    for(int i=0;i<10;i++)
+    {
+        int a=0;
+        std::cin>>a;
+        number_arr[i]=a;
+    }
+    return number_arr;
+}
+void printNumbers(int *numbers,int length)
+{
+    for(int i=0;i<length;i++)
+    {
+        cout<<i<<" "<<numbers[i]<<endl;
+    }
+    return;
 }
