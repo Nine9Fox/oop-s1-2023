@@ -1,14 +1,14 @@
 #include<iostream>
 using namespace std;
 
-extern int *readNumbers(int);
+extern int *readNumbers();
 extern bool equalsArray(int *,int *,int);
 extern int *reverseArray(int *,int);
 
-int *readNumbers(int length)
+int *readNumbers()
 {
     int *number_arr=new int[10];
-    for(int i=0;i<length;i++)
+    for(int i=0;i<10;i++)
     {
         int a=0;
         std::cin>>a;
