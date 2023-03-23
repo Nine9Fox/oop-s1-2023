@@ -6,12 +6,11 @@ PersonList createPersonList(int n)
 {
     PersonList list;
     list.numPeople=n;
-    Person* array=new Person[n];
+    list.people=new Person[n];
     for(int i=0;i<n;i++)
     {
-        array[i].name="John Doe";
-        array[i].age=1;
+        list.people[i].name="John Doe";
+        list.people[i].age=1;
     }
-    list.people=array;
     return list;
 }
