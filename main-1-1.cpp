@@ -1,13 +1,16 @@
+#include"Person.h"
 #include<iostream>
 using namespace std;
 
-extern int *readNumbers();
-extern void printNumbers(int *,int);
+extern Person* createPersonArray(int); 
 
 int main()
 {
-    int *a=readNumbers();
-    printNumbers(a,10);
-    delete[] a;
+    int n=5;
+    Person* a=createPersonArray(n);
+    for(int i=0;i<n;i++)
+    {
+        cout<<a[i].name<<" "<<a[i].age<<endl;
+    } 
     return 0;
 }

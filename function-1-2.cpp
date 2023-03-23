@@ -2,13 +2,16 @@
 #include<iostream>
 using namespace std;
 
-Person* createPersonArray(int n) 
+PersonList createPersonList(int n)
 {
+    PersonList list;
+    list.numPeople=n;
     Person* array=new Person[n];
     for(int i=0;i<n;i++)
     {
         array[i].name="John Doe";
-        array[i].age=0;
+        array[i].age=1;
     }
-    return array;
+    list.people=array;
+    return list;
 }
