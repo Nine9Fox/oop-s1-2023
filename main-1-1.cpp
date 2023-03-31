@@ -1,24 +1,12 @@
+#include"Cage.h"
 #include<iostream>
-#include<math.h>
 using namespace std;
-
-extern void print_matrix(int[10][10]);
 
 int main()
 {
-    int arr[10][10]=
-    {
-        {1,2,3,4,5,6,7,8,9,10},
-        {2,2,3,4,5,6,7,8,9,10},
-        {3,2,3,4,5,6,7,8,9,10},
-        {4,2,3,4,5,6,7,8,9,10},
-        {5,2,3,4,5,6,7,8,9,10},
-        {6,2,3,4,5,6,7,8,9,10},
-        {7,2,3,4,5,6,7,8,9,10},
-        {8,2,3,4,5,6,7,8,9,10},
-        {9,2,3,4,5,6,7,8,9,10},
-        {10,2,3,4,5,6,7,8,9,10},
-    };
-    print_matrix(arr);
+    Cage m1;
+    Cage m2("steve",20);
+    cout<<m1.get_name()<<m1.get_IDnum()<<endl;
+    cout<<m2.get_name()<<m2.get_IDnum()<<endl;
     return 0;
 }
