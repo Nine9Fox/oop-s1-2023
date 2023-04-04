@@ -7,7 +7,7 @@ Wizard::Wizard(string name,int health,int damage,int mana)
 {
     this->name=name;
     this->health=health;
-    this->damage=damage;   
+    this->damage=mana;   
     this->mana=mana;
 };
 
