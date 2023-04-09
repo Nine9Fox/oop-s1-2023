@@ -15,7 +15,7 @@ ParkingLot::ParkingLot()
 {
 
 };
-int ParkingLot::getcount()
+int ParkingLot::getCount()
 {
     return count;
 };

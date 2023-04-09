@@ -14,7 +14,7 @@ class ParkingLot
     Vehicle** vehicles;
         ParkingLot(int max_cap);
         ParkingLot();
-        int getcount();
+        int getCount();
         void parkVehicle(Vehicle* Vehicles);
         void unparkVehicle(int ID);
 };
