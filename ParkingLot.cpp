@@ -55,3 +55,19 @@ void ParkingLot::unparkVehicle(int ID)
     cout<<"Vehicle not in the lot"<<endl;
 
 };
+
+int ParkingLot::countOverstayingVehicles(int maxParkingDuration)
+{
+    int cou=0;
+    for(int i=0;i<max_cap;i++)
+    {
+        if(vehicles[i]!=nullptr)
+        {
+            if(vehicles[i]->getParkingDuration()>maxParkingDuration)
+            {
+                cou++;
+            }
+        }
+    }
+    return cou;
+};

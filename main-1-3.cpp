@@ -14,11 +14,10 @@ int main()
     Car e(5);
     Car f(6);
     Car g(7);
-    Car h(8);
-    Car i(9);
-    Car j(10);
-    Car k(11);
-    Car l(12);
+    Bus h(8);
+    Bus i(9);
+    Motorbike j(10);
+
 
 
     ParkingLot p(10);
@@ -28,16 +27,13 @@ int main()
     p.parkVehicle(&d);
     p.parkVehicle(&e);
     p.parkVehicle(&f);
+    
     p.parkVehicle(&g);
     p.parkVehicle(&h);
     p.parkVehicle(&i);
     p.parkVehicle(&j);
-    p.parkVehicle(&k);
-    p.parkVehicle(&l);  
-    cout<<" a"<<endl;
-    p.unparkVehicle(1);
-    p.unparkVehicle(5);
-    cout<<"b"<<endl;
-    p.parkVehicle(&l);
-
+    sleep(2);
+    sleep(4);
+    cout<<a.getParkingDuration()<<endl;
+    cout<<p.countOverstayingVehicles(3);
 }

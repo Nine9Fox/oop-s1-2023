@@ -10,13 +10,15 @@ class ParkingLot
         
         int max_cap;
         int count;
+        Vehicle** vehicles;  
     public:
-    Vehicle** vehicles;
+    
         ParkingLot(int max_cap);
         ParkingLot();
         int getCount();
         void parkVehicle(Vehicle* Vehicles);
         void unparkVehicle(int ID);
+        int countOverstayingVehicles(int maxParkingDuration);
 };
 
 #endif
