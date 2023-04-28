@@ -3,13 +3,11 @@
 
     AirFleet::AirFleet()
     {
-        fleet=new AirCraft*[5];
-
-        Airplane a(20, 10);       
-        Helicopter b(10000, "BlackHawk"); 
-        AirCraft c(5000);
-        Helicopter d(100, "WhiteHawk");
-        Airplane e(15, 20);
+        a=Airplane(20, 10);
+        b=Helicopter(10000, "BlackHawk"); 
+        c=AirCraft(5000);
+        d=Helicopter(100, "WhiteHawk"); 
+        e=Airplane(15, 20);
         fleet[0]=&a;
         fleet[1]=&b;
         fleet[2]=&c;
