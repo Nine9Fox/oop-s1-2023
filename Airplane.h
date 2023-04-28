@@ -13,6 +13,8 @@ public:
     void reducePassengers(int x);     
     int get_numPassengers();
     virtual void fly(int headwind, int minutes);
+    ~Airplane();      
+
 };
 
 #endif
