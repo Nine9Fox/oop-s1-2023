@@ -10,6 +10,7 @@ public:
 
     Helicopter(int w, string n);
     virtual void fly(int headwind, int minutes);
+    string get_name();
     ~Helicopter();
 };
 #endif

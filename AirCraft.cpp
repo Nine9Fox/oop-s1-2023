@@ -17,7 +17,7 @@
     };    
     void AirCraft::fly(int headwind, int minutes)
     {
-
+        this->numberOfFlights=numberOfFlights+1;
     };
     int AirCraft::get_weight()
     {
@@ -45,5 +45,5 @@
     };
     AirCraft::~AirCraft()
     {
-        
+
     };

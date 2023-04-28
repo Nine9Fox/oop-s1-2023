@@ -27,6 +27,10 @@
             this->numberOfFlights=numberOfFlights+1;   
         }
     };
+    string Helicopter::get_name()
+    {
+        return name;
+    };
     Helicopter::~Helicopter()
     {
 
