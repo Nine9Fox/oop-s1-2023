@@ -25,6 +25,7 @@
         }
         if(fuel-fuel_con>20)
         {
+            fuel=fuel-fuel_con;
             this->numberOfFlights=numberOfFlights+1;             
         }
     };
