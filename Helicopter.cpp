@@ -10,21 +10,22 @@
     };
     void Helicopter::fly(int headwind, int minutes)
     {
-        if(fuel>20)
+        float fuel_con=0;
+        if(headwind>=40)
         {
-            if(headwind>=40)
-            {
-                fuel=fuel-(0.4*minutes);
-            }
-            if(headwind<40)
-            {
-                fuel=fuel-(0.2*minutes);
-            }
-            if(weight>5670)
-            {
-                fuel=fuel-(0.01*(weight-5670)*minutes);
-            }
-            this->numberOfFlights=numberOfFlights+1;   
+            fuel_con=fuel_con+(0.4*minutes);
+        }
+        if(headwind<40)
+        {
+            fuel_con=fuel_con+(0.2*minutes);
+        }
+        if(weight>5670)
+        {
+            fuel_con=fuel_con+(0.01*(weight-5670)*minutes);
+        }
+        if(fuel-fuel_con>20)
+        {
+            this->numberOfFlights=numberOfFlights+1;             
         }
     };
     string Helicopter::get_name()
