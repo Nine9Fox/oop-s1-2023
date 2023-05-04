@@ -6,6 +6,8 @@
 #include <sstream>
 using namespace std;
 using namespace sf;
+#include"Button.h"
+#include"ButtonManager.h"
 
 enum SceneState {        
     Scene_Start
@@ -20,6 +22,11 @@ public:
     int SceneState;
     Sprite sSystemStartBg;
     Texture tSystemStartBg;
+
+    ButtonManager BTmanager;
+
+    //Button escape;
+    //Texture escape_tSelectState,escape_tPressState,escape_tReleaseState,escape_tNormalState;
 
     System();
     ~System();
