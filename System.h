@@ -8,10 +8,8 @@ using namespace std;
 using namespace sf;
 #include"Button.h"
 #include"ButtonManager.h"
+#include"SceneManager.h"
 
-enum SceneState {        
-    Scene_Start
-};
 
 class System
 {
@@ -19,14 +17,7 @@ public:
     sf::RenderWindow window;
     int windowWidth;
     int windowLength;
-    int SceneState;
-    Sprite sSystemStartBg;
-    Texture tSystemStartBg;
-
-    ButtonManager BTmanager;
-
-    //Button escape;
-    //Texture escape_tSelectState,escape_tPressState,escape_tReleaseState,escape_tNormalState;
+    SceneManager  SCmanager;
 
     System();
     ~System();
@@ -34,10 +25,7 @@ public:
     void Run();
     void Input();
     void Initial();
-    void LoadMediaData();
-
     void drawScenes();
-    void drawScenesStart();
 
 
 };

@@ -21,7 +21,6 @@ void ButtonManager::LoadButtonMediaData()
     {
         cout<< "DO NOT FIND Texture/escape_Select.png"<<endl;
     }
-    //escape.setTexture(escape_tSelectState);
 };
 
 void ButtonManager::escape_Input(RenderWindow* window)

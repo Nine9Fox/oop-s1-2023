@@ -1,9 +1,10 @@
 #include"System.h"
+#include"SceneManager.h"
 
 
 System::System()
 {
-    BTmanager=ButtonManager();
+    SCmanager=SceneManager();
     windowLength=943;
     windowWidth=1680;
     window.create(sf::VideoMode(windowWidth, windowLength),L"Ticketing system");
@@ -15,41 +16,17 @@ System::~System()
 
 void System::Initial()
 {
-    window.setFramerateLimit(240);
-    BTmanager.escape.setPosition((1618),0);
-    LoadMediaData();
-    SceneState=Scene_Start;
+    SCmanager.LoadSceneMediaData();
+    SCmanager.InitialScenesStart(&window);
 };
-
-void System::LoadMediaData()
-{
-    if(!tSystemStartBg.loadFromFile("Texture/tSystemStartBg.png"))
-    {
-        cout<< "DO NOT FIND Texture/tSystemStartBg.png"<<endl;
-    }
-    sSystemStartBg.setTexture(tSystemStartBg);    
-
-    BTmanager.LoadButtonMediaData();
-
-};
-
 
 void System::drawScenes()
 {
-    if(SceneState==Scene_Start)
+    if(SCmanager.SceneState==Scene_Start)
     {
-        drawScenesStart();
+        SCmanager.drawScenesStart(&window);
     }
 };
-void System::drawScenesStart()
-{
-
-        window.clear();
-        window.draw(sSystemStartBg);
-        window.draw(BTmanager.escape);
-        window.display();
-};
-
 
 void System::Input()
 {
@@ -61,8 +38,8 @@ void System::Input()
         {
             window.close();            
         }
-        BTmanager.escape.checkMouse(mousePosition,event);
-        BTmanager.escape_Input(&window);
+        SCmanager.BTmanager.escape.checkMouse(mousePosition,event);
+        SCmanager.BTmanager.escape_Input(&window);
     }  
 };
 
