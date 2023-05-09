@@ -26,8 +26,6 @@ public:
     void Input();
     void Initial();
     void drawScenes();
-
-
 };
 
 #endif

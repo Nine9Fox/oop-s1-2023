@@ -11,7 +11,7 @@ using namespace sf;
 #include"ButtonManager.h"
 
 enum SceneState {        
-    Scene_Start
+    Scene_Start, Scene_UserSearch
 };
 
 class SceneManager
@@ -20,15 +20,18 @@ private:
 
 public:
     int SceneState;
-    Sprite sSystemStartBg;
-    Texture tSystemStartBg;
+    Sprite sSystemStartBg,sSystemUserSearchBg;
+    Texture tSystemStartBg,tSystemUserSearchBg;
     ButtonManager BTmanager;
 
     SceneManager();
     ~SceneManager();
 
-    void InitialScenesStart(RenderWindow* window); 
-    void drawScenesStart(RenderWindow* window);
+    void InitialScene_Start(RenderWindow* window); 
+    void drawScene_Start(RenderWindow* window);
+
+    void InitialScene_UserSearch(RenderWindow* window); 
+    void drawScene_UserSearch(RenderWindow* window);
     void LoadSceneMediaData();
 };
 
