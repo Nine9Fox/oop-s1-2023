@@ -45,21 +45,14 @@ void ButtonManager::LoadButtonMediaData()
     //lord the texture of the textInput and font
     //new textInput
     #pragma region 
-    /*if(!textInput_tNormalState.loadFromFile("Texture/escape_Normal.png"))
-    {
-        cout<< "DO NOT FIND Texture/textInput_Normal.png"<<endl;
-    }
-    if(!textInput_tPressState.loadFromFile("Texture/escape_Select.png"))
-    {
-        cout<< "DO NOT FIND Texture/textInput_Press.png"<<endl;
-    }*/
+    
     
     TIB_maps["origin_US"]->tNormalState.loadFromFile("Texture/textInput_tOrigin_US.png");
     TIB_maps["destination_US"]->tNormalState.loadFromFile("Texture/textInput_tDestination_US.png");
 
-    TIB_maps["year_US"]->tNormalState.loadFromFile("Texture/textInput_tOrigin_US.png");
-    TIB_maps["month_US"]->tNormalState.loadFromFile("Texture/textInput_tOrigin_US.png");
-    TIB_maps["day_US"]->tNormalState.loadFromFile("Texture/textInput_tOrigin_US.png");
+    TIB_maps["year_US"]->tNormalState.loadFromFile("Texture/textInput_tYear_US.png");
+    TIB_maps["month_US"]->tNormalState.loadFromFile("Texture/textInput_tMonth_US.png");
+    TIB_maps["day_US"]->tNormalState.loadFromFile("Texture/textInput_tDay_US.png");
 
     TIB_maps["origin"]->tNormalState.loadFromFile("Texture/textInput_tOrigin.png");
     TIB_maps["destination"]->tNormalState.loadFromFile("Texture/textInput_tDestination.png");
@@ -88,9 +81,7 @@ void ButtonManager::LoadButtonMediaData()
     TIB_maps["f_time"]->setTexture(TIB_maps["f_time"]->tNormalState);
     TIB_maps["num"]->setTexture(TIB_maps["num"]->tNormalState);
 
-    /*for (auto& entry : TIB_maps) {
-        entry.second->setTexture(textInput_tNormalState);
-    }*/
+
 
     textInput_font.loadFromFile("Texture/times-new-roman.ttf");
     for (auto& entry : TIBT_maps) {
@@ -175,6 +166,7 @@ void ButtonManager::LoadButtonMediaData()
     #pragma endregion
 };
 
+//Escape button
 void ButtonManager::escape_Input(RenderWindow& window,SceneManager& SCmanager)
 {
     if(escape.State==SelectState)
@@ -227,7 +219,7 @@ void ButtonManager::escape_Input(RenderWindow& window,SceneManager& SCmanager)
     }
 
 };
-
+//User input
 void ButtonManager::userside_Input(RenderWindow& window,SceneManager& SCmanager)
 {
     if(userside.State==SelectState)
@@ -447,7 +439,7 @@ void ButtonManager::textInput_Input(Event& e,string pn)
             TIBS_maps[pn] +=":";
         }
         #pragma endregion
-
+        //Check input locate
         std::string str=TIBS_maps[pn];
         if (pn=="num"||pn=="price"||pn=="year"||pn=="year_US")
         {
@@ -479,7 +471,7 @@ void ButtonManager::textInput_Input(Event& e,string pn)
 
 
 
-        //TIBT_maps[pn]->setString(TIBS_maps[pn]);
+        
     }
 
 };

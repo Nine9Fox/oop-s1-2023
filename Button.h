@@ -20,6 +20,7 @@ public:
 
     Button();
     ~Button();
+    //check mouse event
     void checkMouse(Vector2i mouse,Event event);
 };
 

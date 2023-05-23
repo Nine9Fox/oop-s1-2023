@@ -129,13 +129,13 @@ void SceneManager::InitialScene_UserSearch()
     BTmanager.TIBT_maps["destination_US"]->setPosition(920,207);
 
     
-    BTmanager.TIB_maps["year_US"]->setPosition(380,300);    
-    BTmanager.TIB_maps["month_US"]->setPosition(680,300);
-    BTmanager.TIB_maps["day_US"]->setPosition(980,300);
+    BTmanager.TIB_maps["year_US"]->setPosition(400,300);    
+    BTmanager.TIB_maps["month_US"]->setPosition(700,300);
+    BTmanager.TIB_maps["day_US"]->setPosition(1000,300);
 
-    BTmanager.TIBT_maps["year_US"]->setPosition(440,300);
-    BTmanager.TIBT_maps["month_US"]->setPosition(750,300);
-    BTmanager.TIBT_maps["day_US"]->setPosition(1040,300);
+    BTmanager.TIBT_maps["year_US"]->setPosition(445,305);
+    BTmanager.TIBT_maps["month_US"]->setPosition(759,305);
+    BTmanager.TIBT_maps["day_US"]->setPosition(1040,305);
 
 
     BTmanager.escape.setPosition((1618),0);
