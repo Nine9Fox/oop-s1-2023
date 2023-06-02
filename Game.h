@@ -73,12 +73,14 @@ public:
                 {
                     cout<<"Character has won the game!"<<endl;
                     exit(0);
+                    return 0;
                 }
             }
         }            
         }
         cout<<"Maximum number of iterations reached. Game over."<<endl;
         exit(0);
+        return 0;
     }
 
 };

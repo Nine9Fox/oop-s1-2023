@@ -13,4 +13,5 @@ int main()
     cout<<get<1>(pos_2)<<endl;
     double dis=Utils::calculateDistance(pos_a,pos_2);
     cout<<dis<<endl;
+    return 0;
 }
