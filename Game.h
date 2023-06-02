@@ -41,7 +41,7 @@ public:
         return;
     }
 
-    int gameLoop(int maxIterations, double trapActivationDistance)
+    void gameLoop(int maxIterations, double trapActivationDistance)
     {
         for(int i=0;i<maxIterations;i++)
         {
@@ -73,17 +73,14 @@ public:
                 if(get<0>(pos)>width)
                 {
                     cout<<"Character has won the game!"<<endl;
-                    exit(0);
-                    return 0;
+                    return;
                 }
             }
         }            
         }
         
         cout<<"Maximum number of iterations reached. Game over."<<endl;
-
-        exit(0);
-        return 0;
+        return;
     }
 
 };
