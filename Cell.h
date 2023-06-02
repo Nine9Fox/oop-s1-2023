@@ -45,6 +45,21 @@ public:
     {
         this->type=type;
     }
+
+    ~Cell()
+    {
+        
+    }
+
+    virtual void move(int dx,int dy)
+    {
+
+    }
+
+    virtual void apply(Cell& cell)
+    {
+        
+    }
 };
 
 #endif

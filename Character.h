@@ -12,13 +12,16 @@ public:
         get<1>(position)=y;
     }
 
-    void move(int dx,int dy)
+    virtual void move(int dx,int dy)
     {
         get<0>(position)=get<0>(position)+dx;
         get<1>(position)=get<1>(position)+dy;
     }
 
-
+    ~Character()
+    {
+        
+    }
 };
 
 #endif

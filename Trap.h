@@ -27,6 +27,10 @@ public:
         this->active=false;
     }
 
+    ~Trap()
+    {
+        
+    }
 };
 
 #endif

@@ -4,11 +4,11 @@
 
 int main()
 {
-    Cell a(1,1,'C');
+    Cell a(0,0,'C');
     tuple<int,int> pos_a=a.getPos();
     cout<<get<0>(pos_a)<<endl;
     cout<<get<1>(pos_a)<<endl;
-    tuple<int,int> pos_2=Utils::generateRandomPos(10,10);
+    tuple<int,int> pos_2=Utils::generateRandomPos(0,0);
     cout<<get<0>(pos_2)<<endl;
     cout<<get<1>(pos_2)<<endl;
     double dis=Utils::calculateDistance(pos_a,pos_2);
