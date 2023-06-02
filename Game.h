@@ -72,13 +72,22 @@ public:
                 if(get<0>(pos)>width)
                 {
                     cout<<"Character has won the game!"<<endl;
+                    for(int k=0;k<grid.size();k++)
+                    {
+                        delete[] grid[k];
+                    }
                     exit(0);
                     return 0;
                 }
             }
         }            
         }
+        
         cout<<"Maximum number of iterations reached. Game over."<<endl;
+        for(int k=0;k<grid.size();k++)
+        {
+            delete[] grid[k];
+        }
         exit(0);
         return 0;
     }
