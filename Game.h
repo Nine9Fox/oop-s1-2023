@@ -72,13 +72,13 @@ public:
                 if(get<0>(pos)>width)
                 {
                     cout<<"Character has won the game!"<<endl;
-                    return 0;
+                    exit(0);
                 }
             }
         }            
         }
         cout<<"Maximum number of iterations reached. Game over."<<endl;
-        return 0;
+        exit(0);
     }
 
 };
