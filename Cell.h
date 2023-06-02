@@ -10,6 +10,7 @@ protected:
     std::tuple<int, int> position;
     char type;
 public:
+
     Cell()
     {
         get<0>(position)=-1;
