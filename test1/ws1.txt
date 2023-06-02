@@ -1,4 +1,0 @@
-1.Uploading files to github prevents them from being lost and allows me to share my files with others.
-2.A good commit message needs to be a brief introduction to the commit file.
-3.Every time I complete a part of a project I submit the file once.
-4.True
